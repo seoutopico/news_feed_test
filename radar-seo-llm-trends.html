@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tendencias SEO en la era de los LLMs</title>
+  <link rel="alternate" type="application/rss+xml" title="Tendencias SEO en la era de los LLMs RSS" href="https://seoutopico.github.io/news_feed_test/radar-seo-llm-trends.xml">
+  <style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; color: #222; line-height: 1.6; }
+  header { border-bottom: 2px solid #e0e0e0; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+  header h1 { margin: 0 0 0.25rem; }
+  header .nav { font-size: 0.85rem; color: #666; }
+  header .nav a { color: #0066cc; text-decoration: none; }
+  header .nav a:hover { text-decoration: underline; }
+  article { padding: 1.5rem 0; border-bottom: 1px solid #eee; }
+  article:last-child { border-bottom: none; }
+  article h2 { margin: 0 0 0.25rem; font-size: 1.3rem; line-height: 1.3; }
+  article .date { color: #999; font-size: 0.85rem; margin-bottom: 0.75rem; }
+  article .body img, article .body figure img { max-width: 100%; height: auto; border-radius: 4px; margin: 0.5rem 0; }
+  article .body figure { margin: 1rem 0; }
+  article .body figure figcaption { font-size: 0.85rem; color: #666; text-align: center; margin-top: 0.25rem; }
+  article .body a { color: #0066cc; }
+  article .body hr { border: 0; border-top: 1px solid #eee; margin: 1rem 0; }
+  article .body ul { padding-left: 1.2rem; }
+  article .thumb { float: right; max-width: 220px; max-height: 160px; margin: 0 0 0.75rem 1rem; border-radius: 4px; }
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; color: #999; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tendencias SEO en la era de los LLMs</h1>
+    <div class="nav"><a href="./">&larr; Volver al inicio</a> &middot; <a href="https://seoutopico.github.io/news_feed_test/radar-seo-llm-trends.xml">Suscribir RSS</a> &middot; 3 entradas</div>
+    <p style="margin:0.5rem 0 0;color:#666;">Per-topic feed: Tendencias SEO en la era de los LLMs</p>
+  </header>
+  <article>
+    <h2>llms.txt no sirve para que te citen los LLMs: 300.000 dominios analizados lo confirman</h2>
+    <div class="date">2026-05-27</div>
+    <img class="thumb" src="https://cdn.searchenginejournal.com/wp-content/uploads/2025/11/404ce939-e4ec-44a8-b5eb-3d844a512f28-276.jpeg" alt="">
+    <div class="body"><p>El archivo <code>llms.txt</code> llevaba año y medio vendiéndose como el robots.txt de la era LLM. La idea era darle a ChatGPT, Claude y Perplexity un mapa curado de tu contenido para mejorar tus posibilidades de ser citado. SE Ranking acaba de publicar un estudio sobre 300.000 dominios y la conclusión es demoledora: <strong>no hay correlación medible entre tener llms.txt y aparecer citado en respuestas de LLMs</strong>.</p><p>Los números:</p><ul><li>Adopción: 10,13% de los dominios analizados. Curiosamente, los sitios con más tráfico (100K+ visitas) adoptan menos (8,27%) que los de tráfico medio (10,54%).</li><li>Tanto análisis estadístico como modelos de machine learning (XGBoost) descartan efecto sobre citaciones. Retirar la variable <code>llms.txt</code> del modelo de hecho mejoró su precisión.</li><li>De 515 millones de eventos de tráfico de bots LLM analizados, las peticiones a <code>/llms.txt</code> desde los bots que sí generan citas (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended) son estadísticamente despreciables.</li></ul><p>Gary Illyes lo confirmó en julio de 2025 desde el lado de Google: no soportan llms.txt y no tienen planes de hacerlo. OpenAI y Anthropic tampoco lo piden con frecuencia. El estudio de Trakkr sobre 37.894 dominios llegó a la misma conclusión por otro camino: cero ventaja en citaciones.</p><p>Entonces, ¿por qué hay tanta gente implementándolo? Dos razones legítimas que sí tienen datos detrás:</p><ul><li><strong>Agentes de IDE</strong> (Cursor, Continue, Cline) y algunas integraciones MCP sí lo usan activamente. Si tu producto es una librería o API que se consume desde un agente de código, tiene sentido.</li><li><strong>La web agéntica B2A (business-to-agent)</strong>: el escenario en el que un agente de IA actúa por encargo del usuario y necesita contexto rápido. Aquí <code>llms.txt</code> está empezando a hacer trabajo real.</li></ul><p>El problema es que los <em>copywriters</em> y agencias siguen vendiéndolo como palanca para ChatGPT search, que es justo donde no funciona. Si un cliente te lo pide "para aparecer en ChatGPT", la respuesta honesta es: no, no es eso lo que va a moverte la aguja.</p><p>Lo que sí mueve la aguja según los datos cruzados de Seer, Ahrefs y otros: menciones de marca (Ahrefs encontró correlación r=0,664 entre menciones de marca y citaciones de IA, frente a r=0,10 de backlinks totales), ranquear en página 1 de Google (correlación ~0,65 con menciones en LLMs) y presencia activa en Reddit y Quora (el 44% de las citaciones sociales de Google AI en enero de 2026 vinieron de Reddit).</p><p>El presupuesto que ibas a meter en auditar tu llms.txt, mételo en una estrategia de menciones de marca en comunidades. La señal es 6 veces más predictiva.</p>
+<hr/>
+<p><strong>Sources:</strong></p>
+<ul>
+  <li><a href="https://seranking.com/blog/llms-txt/">https://seranking.com/blog/llms-txt/</a></li>
+  <li><a href="https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/">https://www.searchenginejournal.com/llms-txt-shows-no-clear-effect-on-ai-citations-based-on-300k-domains/561542/</a></li>
+  <li><a href="https://trakkr.ai/trakkr-research/llmstxt-effect">https://trakkr.ai/trakkr-research/llmstxt-effect</a></li>
+  <li><a href="https://aeoengine.ai/blog/llms-txt-zero-usage-ai-bots-ignore">https://aeoengine.ai/blog/llms-txt-zero-usage-ai-bots-ignore</a></li>
+  <li><a href="https://www.seerinteractive.com/insights/what-drives-brand-mentions-in-ai-answers">https://www.seerinteractive.com/insights/what-drives-brand-mentions-in-ai-answers</a></li>
+</ul></div>
+  </article>
+  <article>
+    <h2>El estudio de Seer: AI Overviews tira el CTR un 61%, pero ser citado lo multiplica</h2>
+    <div class="date">2026-05-27</div>
+    <img class="thumb" src="https://cdn.searchenginejournal.com/wp-content/uploads/2025/11/404ce939-e4ec-44a8-b5eb-3d844a512f28-276.jpeg" alt="">
+    <div class="body"><p>Seer Interactive publicó el estudio más serio que tenemos hasta ahora sobre el impacto real de AI Overviews. Analizaron <strong>3.119 queries informacionales de 42 organizaciones</strong>, con 25,1 millones de impresiones orgánicas y 1,1 millones de pago, entre junio de 2024 y septiembre de 2025. Los números asustan, pero la lectura completa es más interesante que el titular.</p><p>Lo que cayó:</p><ul><li>CTR orgánico en queries con AI Overview: del 1,76% al 0,61%. Caída del 61%.</li><li>CTR de pago en esas mismas queries: del 19,7% al 6,34%. Caída del 68%.</li><li>Zero-click rate cuando hay AI Overview presente: entre el 80% y el 83%.</li></ul><p>Lo que muchos pasan por alto: <strong>las marcas citadas dentro del AI Overview ganaron un 35% más de CTR orgánico y un 91% más de CTR de pago</strong> frente a las no citadas. Y otro estudio paralelo apunta que ser citado en AI Overviews genera un 120% más de clics orgánicos por impresión. Es decir, el juego ya no es "ranking en la posición 1" sino "estar dentro de la cajita azul de arriba".</p><p>Hay un dato que vale la pena leer con calma. El CTR orgánico en queries con AIO ha rebotado del 1,3% en diciembre de 2025 al 2,4% en febrero de 2026. La sangría se está estabilizando — a un nivel mucho más bajo que el pre-AIO, pero sin caer en barrena. Y AI Overviews ya aparece en el 48% de las queries en marzo de 2026, frente al 31% un año antes. La expansión se está ralentizando también.</p><p>La metodología tiene una limitación importante: Seer comparó queries que <em>terminaron</em> mostrando AIO en septiembre de 2025 contra las que no, mirando hacia atrás 15 meses. No es un A/B perfecto, pero es lo más cercano a un control que hay con datos públicos. Las fuentes son Search Console, Google Ads, SeerSignals y ZipTie.</p><p>Qué hacer con esto:</p><ul><li><strong>Mide qué porcentaje de tus queries top dispara AIO.</strong> Si es más del 50%, tu modelo de tráfico orgánico ya está roto. Asúmelo y prioriza ser citado, no ranquear primero.</li><li><strong>Separa informacional de transaccional en tus reports.</strong> Mezclar ambos esconde el desastre informacional bajo la estabilidad transaccional.</li><li><strong>Identifica las 50 queries que más te traen tráfico y comprueba una a una si Google las está mostrando con AI Overview hoy.</strong> Las que sí, replantéalas como contenido optimizado para ser citado: respuesta directa en los primeros 200 palabras, datos propios, fuente clara.</li></ul><p>La pregunta interesante para los próximos meses: ¿se estabiliza realmente el CTR de orgánico con AIO en torno al 2-3%, o ese rebote de febrero es ruido temporal antes de otra bajada con el rollout de AI Mode?</p>
+<hr/>
+<p><strong>Sources:</strong></p>
+<ul>
+  <li><a href="https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update">https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update</a></li>
+  <li><a href="https://searchengineland.com/google-ai-overviews-drive-drop-organic-paid-ctr-464212">https://searchengineland.com/google-ai-overviews-drive-drop-organic-paid-ctr-464212</a></li>
+  <li><a href="https://www.searchenginejournal.com/ai-overview-ctr-fell-61-but-clicks-didnt-collapse/572993/">https://www.searchenginejournal.com/ai-overview-ctr-fell-61-but-clicks-didnt-collapse/572993/</a></li>
+  <li><a href="https://www.inc.com/annabel-burba/googles-ai-overviews-are-killing-search-a-new-study-shows-the-best-way-to-protect-your-traffic/91260943">https://www.inc.com/annabel-burba/googles-ai-overviews-are-killing-search-a-new-study-shows-the-best-way-to-protect-your-traffic/91260943</a></li>
+</ul></div>
+  </article>
+  <article>
+    <h2>Google lanza el core update de mayo 2026: cuatro perdedores por cada ganador</h2>
+    <div class="date">2026-05-27</div>
+    <img class="thumb" src="https://cdn.searchenginejournal.com/wp-content/uploads/2026/05/seo-pulse-750.png" alt="">
+    <div class="body"><p>Google empezó el rollout del <strong>core update de mayo 2026</strong> el 21 de mayo y la cosa va para largo: la previsión es completarlo hacia el 4 de junio. Los primeros datos del mercado alemán que ha publicado SEO-Kreativ son brutales — de 1.371 dominios con movimientos visibles, 134 son perdedores claros frente a solo 32 ganadores. Ratio 4:1. No es un susto pequeño.</p><p>El patrón que se intuye continúa con la línea del update de marzo: caen los agregadores (job boards, OTAs, comparadores, diccionarios, bases de sinónimos) y suben sitios de marca, institucionales y gubernamentales. Es decir, lo que Google considera "destino real" frente al intermediario que se limita a empaquetar información ajena. Search Engine Roundtable recoge comentarios de SEOs que llevan tres días viendo movimiento fuerte: "se siente real, pesado y con dientes".</p><p>Lo interesante es que este core update llega justo encima de la reorganización de AI Mode y los nuevos AI Overviews que Google presentó en I/O. Google lo niega oficialmente, pero la coincidencia temporal alimenta la teoría de que el sistema de ranking se está alineando con lo que el modelo Gemini-based necesita para alimentar respuestas generativas: contenido original, con perspectiva propia, atribuible a una persona o entidad concreta.</p><p>Qué vigilar estas dos semanas:</p><ul><li><strong>Espera para sacar conclusiones.</strong> El propio Google recomienda esperar a que termine el rollout y luego una semana más antes de comparar Search Console. Reaccionar el día 3 a un drop puntual lleva a tomar decisiones malas.</li><li><strong>Mira la composición de tu tráfico</strong>, no solo el total. Si caes en queries informacionales pero te mantienes en transaccionales, probablemente es AI Overviews comiendo top of funnel, no el core update.</li><li><strong>Revisa qué porcentaje de tu contenido es "agregación" frente a aporte original</strong>. Listados de "los 10 mejores X" sin experiencia real detrás están en zona de riesgo estructural, no solo de este update.</li></ul><p>El análisis serio (Lily Ray, Amsive, datos de Sistrix con muestra de 2.000+ dominios) no llegará hasta después del 4 de junio. Hasta entonces, cualquier post con "winners and losers" del May 2026 update está jugando con ruido. ¿Tu sitio se apoya más en autoridad de marca o en optimización a nivel de URL? Ese es el factor que la primera lectura del update parece estar premiando.</p>
+<hr/>
+<p><strong>Sources:</strong></p>
+<ul>
+  <li><a href="https://www.seroundtable.com/google-may-2026-core-update-landed-41380.html">https://www.seroundtable.com/google-may-2026-core-update-landed-41380.html</a></li>
+  <li><a href="https://www.seo-kreativ.de/en/blog/google-may-2026-core-update-started/">https://www.seo-kreativ.de/en/blog/google-may-2026-core-update-started/</a></li>
+  <li><a href="https://www.searchenginejournal.com/seo-pulse-google-launches-core-update-amid-i-o-ai-search-overhaul/575676/">https://www.searchenginejournal.com/seo-pulse-google-launches-core-update-amid-i-o-ai-search-overhaul/575676/</a></li>
+  <li><a href="https://ppc.land/googles-may-2026-core-update-is-live-and-the-clock-is-ticking/">https://ppc.land/googles-may-2026-core-update-is-live-and-the-clock-is-ticking/</a></li>
+</ul></div>
+  </article>
+  <footer>Generated by <a href="https://ainalluna.com/">ainalluna.com</a> &middot; 2026-05-27 06:15 UTC</footer>
+</body>
+</html>
